@@ -19,8 +19,7 @@ def get_table_length():
             continue
         if started:
             if ".pdf" in line:
-                docs = line
-    return len(docs)
+                return len(line)
 
 
 # Sends text to verified numbers via twilio
