@@ -12,7 +12,6 @@ def get_table_length():
     with open('sharkcage.html') as f:
         lines = f.readlines()
 
-    docs = []
     started = False
     for line in lines:
         if "Attachments:" in line:
@@ -31,13 +30,14 @@ def send_text():
         '+15712718255', 
         '+17038015909', 
         '+12103341254', 
-        # KHADIJA '+15712885538',
+        '+15712885538',
         '+19154019419',
         '+7035091311'
         ]
-    account_sid = 'AC9369774b5539f62729806254f043604b' 
-    auth_token = '919e23238a827f8fccee1e6c6933bdab' 
+    account_sid = 'redacted' 
+    auth_token = 'redacted' 
     client = Client(account_sid, auth_token) 
+    
     for number in numbers:
         message = client.messages.create(  
             messaging_service_sid='MGc33520002b302a2275544977e4096dc1', 
@@ -46,6 +46,7 @@ def send_text():
         ) 
 
 
+# Main program execution
 if __name__ == '__main__':
     import time
     base_len = 7307
