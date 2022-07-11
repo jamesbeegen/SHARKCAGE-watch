@@ -31,7 +31,7 @@ def send_text():
         '+12103341254', 
         '+15712885538',
         '+19154019419',
-        '+7035091311'
+        '+17035091311'
         ]
     account_sid = 'redacted' 
     auth_token = 'redacted' 
